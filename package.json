@@ -1,0 +1,16 @@
+{
+  "name": "learnyounode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "3_my-first-io.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^9.3.4"
+  }
+}
