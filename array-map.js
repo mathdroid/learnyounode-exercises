@@ -11,10 +11,13 @@ function artistMapper(artis) {
 
 function map(someArray, callbackFn) {
   let newArray = [];
+  function fn() {
+    return `1`;
+  }
   for (let i = 0; i < someArray.length; i++) {
     let element = someArray[i];
 
-    let functionResult = callbackFn(element, i, someArray);
+    let functionResult = fn(element, i, someArray);
 
     newArray.push(functionResult);
   }
