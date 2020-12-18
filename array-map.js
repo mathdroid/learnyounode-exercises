@@ -11,21 +11,18 @@ function artistMapper(artis) {
 
 function map(someArray, callbackFn) {
   let newArray = [];
-  function fn() {
-    return `1`;
-  }
   for (let i = 0; i < someArray.length; i++) {
     let element = someArray[i];
 
-    let functionResult = fn(element, i, someArray);
+    let functionResult = callbackFn(element, i, someArray);
 
     newArray.push(functionResult);
   }
   return newArray;
 }
 
-let result2 = map(artists, function () {
-  return `1`;
+let result2 = map(artists, function (element, index) {
+  return `${index + 1}. ${artistMapper(element)}`;
 });
 
 console.log(result2);
